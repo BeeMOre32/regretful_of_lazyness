@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="default.css" />
+    <title>Document</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .flex-item {
+        flex: 1 1 auto;
+      }
+      .flex-item:nth-child(1) {
+        /*flex: 1 1 150px;*/
+        width: 20%;
+        /*flex: 0 1 20%;*/
+      }
+      .flex-item:nth-child(2) {
+        /*flex: 3 1 0;*/
+        width: 60%;
+        /*flex: 0 1 60%;*/
+      }
+      .flex-item:nth-child(3) {
+        /*flex: 1;*/
+        width: 20%;
+        /*flex: 0 1 20%;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet
+          asperiores dicta dignissimos est eum eveniet explicabo, inventore
+          ipsum magnam quod ratione rerum ut vitae voluptas.
+        </p>
+      </div>
+      <div class="flex-item">2222222</div>
+      <div class="flex-item">3233333333</div>
+      <div class="flex-item">444444444</div>
+    </div>
+  </body>
+</html>

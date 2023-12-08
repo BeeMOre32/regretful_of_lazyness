@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .grid-container {
+        display: grid;
+        /*grid-template-columns: repeat(3, minmax(100px, 1fr));*/
+        grid-template-columns: repeat(3, 100px);
+        height: 50vh;
+
+        /*align-items: center;*/
+        /*align-content: space-between;*/
+        justify-content: space-between;
+      }
+
+      .grid-item:nth-child(2) {
+        justify-self: center;
+        align-self: end;
+      }
+
+      .grid-item:nth-child(3) {
+        order: 1;
+      }
+
+      .grid-item:nth-child(4) {
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+  </body>
+</html>

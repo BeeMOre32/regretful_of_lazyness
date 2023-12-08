@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css" />
+
+    <style>
+      .flex-container {
+        display: flex;
+        width: 50%;
+      }
+
+      .flex-item {
+        flex-basis: 130px;
+      }
+      .flex-item:nth-child(1) {
+        flex-grow: 1;
+      }
+      .flex-item:nth-child(2) {
+        flex-grow: 2;
+      }
+      .flex-item:nth-child(3) {
+        flex-grow: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">11111222221</div>
+      <div class="flex-item">2222222</div>
+      <div class="flex-item">3233333333</div>
+    </div>
+  </body>
+</html>
