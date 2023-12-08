@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      height: 100vh;
+    }
+    header {
+      grid-column: 1;
+      grid-row: 1;
+      padding: 30px;
+    }
+    .main {
+      justify-self: center;
+      align-self: center;
+      font-size: calc(20px + 2.5vw);
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #222;
+    }
+    footer {
+      grid-row: 3;
+      align-self: end;
+      padding: 30px;
+    }
+    @media (orientation: portrait) {
+      .grid-container {
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <header>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+        veritatis.
+      </header>
+      <div class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <footer>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptatibus, quibusdam, quia, quod voluptate voluptatum quos
+        exercitationem quas voluptates quidem doloribus. Quisquam voluptatibus,
+        quibusdam, quia, quod voluptate voluptatum quos exercitationem quas
+        voluptates quidem doloribus.
+      </footer>
+    </div>
+  </body>
+</html>
